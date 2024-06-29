@@ -1,0 +1,78 @@
+.home-main {
+    margin-top: 16px;
+    padding-top: 226px;
+    padding-bottom: 24px;
+    padding-left: 39px;
+    background: url('/public/images/home-main-bg.png') no-repeat;
+    color: #fff
+}
+
+.home-main-title {
+    font-weight: 500;
+    font-size: 33px;
+}
+
+.home-main-price {
+    margin-top: 16px;
+    font-size: 26px;
+}
+
+.home-main-view {
+    display: block;
+    width: 193px;
+    margin-top: 48px;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.home-main-slider {
+    width: fit-content;
+    margin: 185px auto;
+    margin-bottom: 0;
+    gap: 13.71px;
+
+    .slider-item {
+        width: 9.14px;
+        height: 9.14px;
+        background-color: #fff;
+        border-radius: 100%;
+    }
+
+    .slider-item__active {
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        border-radius: 100%;
+    }
+}
+
+.home-latest {
+    margin-top: 64px;
+    margin-bottom: 250px;
+}
+
+.home-latest-title {
+    font-weight: 500;
+    font-size: 33px;
+    color: #000;
+}
+
+.home-latest-all {
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    color: #A18A68;
+}
+
+.home-latest-box {
+    margin-top: 39px;
+    flex-wrap: wrap;
+    row-gap: 86px;
+}
+

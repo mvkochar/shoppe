@@ -1,0 +1,40 @@
+.header {
+    margin-top: 64px;
+}
+
+.header-nav {
+    list-style-type: none;
+    gap: 64px;
+
+    li {
+        a {
+            font-size: 16px;
+            color: #000;
+        }
+    }
+}
+
+.header-divider {
+    width: 17px;
+    height: 0;
+    margin-left: 48px;
+    border: 1px solid #707070;
+    transform: rotate(90deg);
+}
+
+.header-actions {
+    margin-top: 4px;
+    margin-left: 48px;
+    gap: 39px;
+
+    a {
+        display: block;
+    }
+}
+
+.header-search {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
