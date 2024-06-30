@@ -51,3 +51,9 @@ body {
   margin-left: 96px;
   margin-right: 96px;
 }
+
+.top-divider {
+  width: 1248px;
+  height: 0;
+  border: 1px solid #D8D8D8;
+}
