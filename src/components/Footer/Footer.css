@@ -37,3 +37,20 @@
         cursor: pointer;
     }
 }
+
+.footer-info {
+    margin-top: 50px;
+}
+
+.footer-rights {
+    font-size: 16px;
+    color: #000;
+
+    a {
+        color: #707070;
+    }
+}
+
+.footer-social {
+    gap: 30px;
+}

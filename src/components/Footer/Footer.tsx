@@ -17,6 +17,15 @@ const Footer = () => {
             <button type="button"><img src="/images/arrow-right.svg" alt="arrow-right" /></button>
           </form> 
       </div>
+      <div className="footer-info d-f jc-sb">
+        <div className="footer-rights">&copy; 2021 Shelly. <a href="">Terms of use</a> and <a href="">privacy policy</a>.</div>
+        <div className="footer-social d-f">
+          <div><img src="/images/social/1.png" alt="social1" /></div>
+          <div><img src="/images/social/2.png" alt="social2" /></div>
+          <div><img src="/images/social/3.png" alt="social3" /></div>
+          <div><img src="/images/social/4.png" alt="social4" /></div>
+        </div>
+      </div>
     </footer>
   )
 }
