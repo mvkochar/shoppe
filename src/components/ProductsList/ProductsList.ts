@@ -6,6 +6,7 @@ type Product = {
     sale: string
     isSale: boolean
     soldOut: boolean 
+    rating: number
 }
 
 const ProductsList:Product[] = [
@@ -16,7 +17,8 @@ const ProductsList:Product[] = [
         price: '20.00',
         isSale: true,
         sale: "21",
-        soldOut: false
+        soldOut: false,
+        rating: 5
     },
 
     {
@@ -26,7 +28,8 @@ const ProductsList:Product[] = [
         price: '25.00',
         isSale: false,
         sale: "0",
-        soldOut: false
+        soldOut: false,
+        rating: 5
     },
 
     {
@@ -36,7 +39,8 @@ const ProductsList:Product[] = [
         price: '30.00',
         isSale: false,
         sale: "0",
-        soldOut: false
+        soldOut: false,
+        rating: 5
     },
 
     {
@@ -46,7 +50,8 @@ const ProductsList:Product[] = [
         price: '30.00',
         isSale: false,
         sale: "0",
-        soldOut: false
+        soldOut: false,
+        rating: 5
     },
 
     {
@@ -56,7 +61,8 @@ const ProductsList:Product[] = [
         price: '19.00',
         isSale: false,
         sale: "0",
-        soldOut: true
+        soldOut: true,
+        rating: 5
     },
 
     {
@@ -66,7 +72,8 @@ const ProductsList:Product[] = [
         price: '29.00',
         isSale: false,
         sale: "0",
-        soldOut: false
+        soldOut: false,
+        rating: 5
     }
 ]
 

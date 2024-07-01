@@ -1,5 +1,6 @@
 import React from 'react'
 import './ProductCard.css'
+import { Link } from 'react-router-dom'
 
 type ProductCardProps = {
     id: number
@@ -15,7 +16,7 @@ const ProductCard = ({ id, image, title, price, sale, isSale, soldOut}: ProductC
     return (
         <div>
             <div className="product-card-main pos-r">
-                <div><img src={image} alt="product" /></div>
+                <div> <Link to={`/product/${id}`}><img src={image} alt="product" /></Link> </div>
                 <button className='product-card-add'>Add to cart</button>
                 <div className={soldOut ? "product-card-about" : "d-n"}>Sold out</div>
                 <div className={isSale ? "product-card-about" : "d-n"}>- %{sale}</div>
