@@ -15,6 +15,7 @@ const Product = () => {
 
     const [tab, setTab] = React.useState(1)
     const [productCount, setProductCount] = React.useState(1)
+    const [addCart, setAddCart] = React.useState(false)
 
     const decrProductCount = () => {
         setProductCount((prevState) => {
@@ -32,9 +33,21 @@ const Product = () => {
         })
     }
 
+    const handleCart = () => {
+        setAddCart((prevState) => {
+            return (
+                !prevState
+            )
+        })
+    }
+
     return (
         <div className="container">
-            <div className="top-divider" style={{ marginTop: "17px" }}></div>
+            <div className={!addCart ? "top-divider" : "d-n" }style={{ marginTop: "17px" }}></div>
+            <div className={addCart ? "product-cart d-f jc-sb" : "d-n"}>
+                <h5 className="product-cart-title">The item added to your Shopping bag.</h5>
+                <a href="" className="product-cart-view">View cart</a>
+            </div>
             <main className='product-main d-f'>
                 <div className="product-main-pictures d-f">
                     <div className='pictures-min d-f'>
@@ -102,11 +115,11 @@ const Product = () => {
                     </p>
                     <div className="product-main-actions d-f">
                         <div className="product-main-quantity d-f align-center">
-                            <button onClick={decrProductCount} disabled = {productCount === 1 ? true : false}>-</button>
+                            <button onClick={decrProductCount} disabled={productCount === 1 ? true : false}>-</button>
                             <div>{productCount}</div>
                             <button onClick={incrProductCount}>+</button>
                         </div>
-                        <a href="" className="product-main-add">Add to cart</a>
+                        <button className="product-main-add" onClick={handleCart}>{addCart ? "Remove from cart" : "Add to cart"}</button>
                     </div>
                     <div className="product-main-about d-f">
                         <button className='liked-btn'>
@@ -166,7 +179,7 @@ const Product = () => {
                     className={tab === 3 ? 'tabs-btn tabs-btn__active' : 'tabs-btn'}
                     onClick={() => setTab(3)}
                 >
-                    Reviews(0)
+                    Reviews(2)
                 </button>
             </div>
             <p className={tab === 1 ? "product-description" : "d-n"}>
@@ -175,6 +188,94 @@ const Product = () => {
                 Sed quis mauris eget arcu facilisis consequat sed eu felis. Nunc sed porta augue.
                 Morbi porta tempor odio, in molestie diam bibendum sed.
             </p>
+            <div className={tab === 2 ? "product-aditional d-f" : "d-n"}>
+                <div className='d-f'>
+                    <div className="product-aditional-title">Weight</div>
+                    <div className="product-aditional-desc"> 0.3 kg</div>
+                </div>
+                <div className='d-f'>
+                    <div className="product-aditional-title">Dimentions:</div>
+                    <div className="product-aditional-desc">15 x 10 x 1 cm</div>
+                </div>
+                <div className='d-f'>
+                    <div className="product-aditional-title">Colours:</div>
+                    <div className="product-aditional-desc">Black, Browns, White</div>
+                </div>
+                <div className='d-f'>
+                    <div className="product-aditional-title">Material:</div>
+                    <div className="product-aditional-desc">Metal</div>
+                </div>
+            </div>
+            <div className={tab === 3 ? "product-reviews d-f" : "d-n"}>
+                <div>
+                    <h3 className="product-reviews-title">2 Reviews for {ProductsList[index].title}</h3>
+                    <div className="product-reviews-content d-f">
+                        <div>
+                            <div className="review-caption d-f align-center">
+                                <div className="review-title">Scarlet withch</div>
+                                <div className="review-date">6 May, 2020</div>
+                            </div>
+                            <div className="review-rating d-f">
+                                <div><img src="/images/review-star1.svg" alt="review-star1" /></div>
+                                <div><img src="/images/review-star1.svg" alt="review-star1" /></div>
+                                <div><img src="/images/review-star1.svg" alt="review-star1" /></div>
+                                <div><img src="/images/review-star2.svg" alt="review-star2" /></div>
+                                <div><img src="/images/review-star2.svg" alt="review-star2" /></div>
+                            </div>
+                            <p className="review-desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                nibh euismod tincidunt ut laoreet.
+                            </p>
+                        </div>
+                        <div>
+                            <div className="review-divider"></div>
+                            <div className="review-caption d-f align-center">
+                                <div className="review-title">Scarlet withch</div>
+                                <div className="review-date">6 May, 2020</div>
+                            </div>
+                            <div className="review-rating d-f">
+                                <div><img src="/images/review-star1.svg" alt="review-star1" /></div>
+                                <div><img src="/images/review-star1.svg" alt="review-star1" /></div>
+                                <div><img src="/images/review-star1.svg" alt="review-star1" /></div>
+                                <div><img src="/images/review-star2.svg" alt="review-star2" /></div>
+                                <div><img src="/images/review-star2.svg" alt="review-star2" /></div>
+                            </div>
+                            <p className="review-desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 className="product-reviews-title">Add a Review</h3>
+                    <div className="product-reviews-subtitle">
+                        Your email address will not be published. Required fields are marked *
+                    </div>
+                    <form action="" className='product-reviews-fm d-f'>
+                        <input type="text" name='reviewContent' className='review-content' placeholder='Your Review*' />
+                        <input type="text" name='reviewAuthor' className='review-author' placeholder='Enter your name*' />
+                        <input type="email" name='reviewEmail' className='review-email' placeholder='Enter your Email*' />
+                        <div className="check-bl d-f">
+                            <input type="checkbox" name="saveEmail" id="saveEmail" />
+                            <label htmlFor="saveEmail">
+                                Save my name, email, and website in this browser for the next time I comment
+                            </label>
+                        </div>
+                        <div className='rating'>
+                            <div className="rating-title">Your Rating*</div>
+                            <div className="rating-select d-f">
+                                <div><img src="/images/review-star2.svg" alt="review-star2" /></div>
+                                <div><img src="/images/review-star2.svg" alt="review-star2" /></div>
+                                <div><img src="/images/review-star2.svg" alt="review-star2" /></div>
+                                <div><img src="/images/review-star2.svg" alt="review-star2" /></div>
+                                <div><img src="/images/review-star2.svg" alt="review-star2" /></div>
+                            </div>
+                        </div>
+                        <button type="button">Submit</button>
+                    </form>
+                </div>
+            </div>
             <div className="product-similar">
                 <h2 className="product-similar-title">Similar Items</h2>
                 <div className="product-similar-box d-f jc-sb">
