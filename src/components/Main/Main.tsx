@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { Contact, Home, MyAccount, Product, ResetPassword, Shop } from '../../pages'
+import { Blog, Contact, Home, MyAccount, Product, ResetPassword, Shop } from '../../pages'
 
 const Main = () => {
   return (
@@ -28,6 +28,10 @@ const Main = () => {
         <Route
           path='reset-password'
           element={<ResetPassword/>}
+        />
+        <Route
+          path='blog'
+          element={<Blog/>}
         />
     </Routes>
   )
