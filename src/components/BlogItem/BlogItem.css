@@ -1,0 +1,27 @@
+.blog-item-about {
+    margin-top: 22px;
+    font-size: 14px;
+    color: #707070;
+}
+
+.blog-item-title {
+    margin-top: 5px;
+    font-size: 20px;
+    color: #000;
+}
+
+.blog-item-desc {
+    width: 450px;
+    margin-top: 14px;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #707070;
+}
+
+.blog-item-more {
+    display: block;
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #A18A68;
+}

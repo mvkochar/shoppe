@@ -1,0 +1,60 @@
+.single-blog-title {
+    margin-top: 96px;
+    font-weight: 500;
+    font-size: 33px;
+    text-align: center;
+    color: #000;
+}
+
+.single-blog-subtitle {
+    margin-top: 16px;
+    margin-bottom: 39px;
+    font-size: 16px;
+    text-align: center;
+    color: #7F7F7F;
+
+    span {
+        color: #000;
+    }
+}
+
+.single-blog-middle {
+    margin-top: 64px;
+    margin-bottom: 250px;
+    margin-left: 385px;
+    margin-right: 385px;
+}
+
+.single-blog-desc {
+    font-size: 16px;
+    color: #000;
+
+    &:nth-child(2) {
+        margin-top: 20px;
+        margin-bottom: 58px;
+    }
+}
+
+.single-blog-trends {
+    margin-top: 48px;
+    color: #000;
+
+    .trends-title {
+        margin-bottom: 24px;
+        font-size: 26px;
+    }
+
+    .trends-list {
+        margin-top: calc(16px - 58px);
+        margin-left: 43px;
+        
+        li {
+            margin-bottom: 20px;
+            font-size: 16px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
