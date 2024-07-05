@@ -1,0 +1,53 @@
+.story-title {
+    margin-top: 96px;
+    font-size: 33px;
+    text-align: center;
+    color: #000;
+}
+
+.story-subtitle {
+    margin-top: 24px;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+}
+
+.story-wr {
+    margin-top: 46px;
+    margin-bottom: 253px;
+    margin-left: 388px;
+    margin-right: 373px;
+}
+
+.story-desc,
+.story-bl-list li {
+    font-size: 16px;
+    color: #000;
+}
+
+.story-bl {
+    margin-top: 39px;
+}
+
+.story-bl-title {
+    font-size: 26px;
+    color: #000;
+}
+
+.story-bl-img {
+    margin-top: 23px;
+    margin-bottom: 48px;
+}
+
+.story-bl-list {
+    margin-top: 16px;
+    margin-left: 28px;
+
+    li {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
