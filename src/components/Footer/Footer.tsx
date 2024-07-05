@@ -13,13 +13,15 @@ const Footer = () => {
             <li><a href="">Shippng and returns</a></li>
           </ul>
         </nav>
-         <form action="" className="footer-newsletter d-f jc-sb">
-            <input type="email" name="newsletterEmail" placeholder='Give an email, get the newsletter.'/>
-            <button type="button"><img src="/images/arrow-right.svg" alt="arrow-right" /></button>
-          </form> 
+        <form action="" className="footer-newsletter d-f jc-sb">
+          <input type="email" name="newsletterEmail" placeholder='Give an email, get the newsletter.' />
+          <button type="button"><img src="/images/arrow-right.svg" alt="arrow-right" /></button>
+        </form>
       </div>
       <div className="footer-info d-f jc-sb">
-        <div className="footer-rights">&copy; 2021 Shelly. <a href="">Terms of use</a> and <a href="">privacy policy</a>.</div>
+        <div className="footer-rights">
+          &copy; 2021 Shelly. <a href="">Terms of use</a> and <Link to="/privacy">privacy policy</Link>.
+        </div>
         <div className="footer-social d-f">
           <div><img src="/images/social/1.png" alt="social1" /></div>
           <div><img src="/images/social/2.png" alt="social2" /></div>

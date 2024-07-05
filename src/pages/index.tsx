@@ -7,5 +7,6 @@ import ResetPassword from "./ResetPassword";
 import Blog from "./Blog";
 import SingleBlog from "./SingleBlog";
 import OurStory from "./OurStory";
+import Privacy from "./Privacy";
 
-export {Home, Shop, Product, Contact, MyAccount, ResetPassword, Blog, SingleBlog, OurStory}
+export {Home, Shop, Product, Contact, MyAccount, ResetPassword, Blog, SingleBlog, OurStory, Privacy}
