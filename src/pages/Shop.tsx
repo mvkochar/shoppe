@@ -23,8 +23,8 @@ const Shop = () => {
                                 </select>
                             </div>
                             <div className="select-bl">
-                                <select name="filterShop">
-                                    <option value="0">Shop by</option>
+                                <select name="filterSort">
+                                    <option value="0">So by</option>
                                 </select>
                             </div>
                             <div className="price-range">
