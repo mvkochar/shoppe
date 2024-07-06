@@ -36,7 +36,7 @@
     width: fit-content;
     margin: 126px auto;
     margin-bottom: 247px;
-    
+
     .input-box {
         flex-direction: column;
         gap: 46px;
@@ -92,3 +92,164 @@
     font-size: 16px;
     color: #000;
 }
+
+.account-menu {
+    width: 1248px;
+    margin-top: 64px;
+    margin-bottom: 39px;
+    border-bottom: 1px solid #D8D8D8;
+    gap: 49px;
+
+    .menu-btn__active {
+        border-bottom: 1px solid #000;
+        color: #000;
+    }
+}
+
+.account-menu-btn {
+    display: block;
+    padding-bottom: 34px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #707070;
+}
+
+.account-dashboard {
+    margin-bottom: 205px;
+}
+
+.account-dashboard-desc {
+    font-size: 16px;
+    color: #000;
+
+    span {
+        color: #A18A68;
+        cursor: pointer;
+    }
+
+    &:nth-child(2) {
+        margin-top: 20px;
+    }
+}
+
+.account-orders,
+.account-downloads,
+.account-addresses {
+    margin-bottom: 253px;
+}
+
+.account-orders .orders-item,
+.account-downloads .downloads-item {
+    padding-top: 20px;
+    padding-bottom: 21px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #EFEFEF;
+    border-top: 2px solid #A18A68;
+}
+
+.account-orders .orders-item .orders-item-title,
+.account-downloads .downloads-item .downloads-item-title {
+    font-size: 16px;
+    color: #000;
+}
+
+.account-orders .orders-item a,
+.account-downloads .downloads-item a {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #A18A68;
+}
+
+.account-addresses-about {
+    font-size: 15px;
+    color: #000;
+}
+
+.account-addresses-tb {
+    width: 100%;
+    margin-top: 45px;
+    border-collapse: collapse;
+
+
+    th {
+        width: 50%;
+        padding-bottom: 24px;
+        font-size: 20px;
+        text-align: left;
+        color: #000;
+    }
+
+    td {
+        padding-bottom: 14px;
+        font-size: 14px;
+        color: #707070;
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #A18A68;
+    }
+}
+
+.account-details {
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 163px;
+
+    .input-box {
+        flex-direction: column;
+        gap: 37px;
+    }
+
+    input {
+        display: block;
+        width: 500px;
+        padding-bottom: 13px;
+        border: none;
+        border-bottom: 1px solid #D8D8D8;
+        outline: none;
+        font-size: 14px;
+        color: #707070;
+    }
+
+    button {
+        display: block;
+        width: 500px;
+        margin-top: 64px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        background-color: #000000;
+        border: 1px solid #000000;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+.account-details-note {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #707070;
+}
+
+.account-details-title {
+    margin-top: 48px;
+    margin-bottom: 41px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000;
+}
+
