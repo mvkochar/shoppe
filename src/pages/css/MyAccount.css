@@ -173,8 +173,7 @@
 .account-addresses-tb {
     width: 100%;
     margin-top: 45px;
-    border-collapse: collapse;
-
+    /*border-collapse: collapse;*/
 
     th {
         width: 50%;
@@ -185,6 +184,8 @@
     }
 
     td {
+        vertical-align: top;
+        height: 30px;
         padding-bottom: 14px;
         font-size: 14px;
         color: #707070;

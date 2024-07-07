@@ -1,12 +1,17 @@
 import React from 'react'
 import './css/MyAccount.css'
 import { Link } from 'react-router-dom'
+import BillingAddress from '../components/BillingAddress/BillingAddress'
+import OrdersTable from '../components/OrdersTable/OrdersTable'
 
 
 
 const MyAccount = () => {
     const [swich, setSwich] = React.useState(3)
     const [account, setAccount] = React.useState(1)
+    const [addBillingAddress, setAddBillingAddress] = React.useState(false)
+    const [hasOrders, setHasOrders] = React.useState(true)
+    const [hasDownloads, setHasDownloads] = React.useState(true)
 
     return (
         <>
@@ -102,16 +107,18 @@ const MyAccount = () => {
                             </p>
                         </div>
                         <div className={account === 2 ? "account-orders container" : "d-n"}>
-                            <div className="orders-item d-f jc-sb align-center">
+                            <div className={!hasOrders ? "orders-item d-f jc-sb align-center" : "d-n"}>
                                 <h5 className="orders-item-title">No order has been made yet.</h5>
                                 <Link to="/shop">Browse product</Link>
                             </div>
+                            {hasOrders ? <OrdersTable ordersType={1}/> : null}
                         </div>
                         <div className={account === 3 ? "account-downloads container" : "d-n"}>
-                            <div className="downloads-item d-f jc-sb align-center">
+                            <div className={!hasDownloads ? "downloads-item d-f jc-sb align-center" : "d-n"}>
                                 <h5 className="downloads-item-title">No downloads available yet.</h5>
                                 <Link to="/shop">Browse product</Link>
                             </div>
+                            {hasDownloads ? <OrdersTable ordersType={2}/> : null}
                         </div>
                         <div className={account === 4 ? "account-addresses container" : "d-n"}>
                             <h5 className="account-addresses-about">
@@ -124,16 +131,18 @@ const MyAccount = () => {
                                         <th>Shipping address</th>
                                     </tr>
                                 </thead>
-                                <tfoot>
+                                <tbody>
                                     <tr>
-                                        <td><button>Add</button></td>
+                                        <td>
+                                            {addBillingAddress ? <BillingAddress /> :  <button onClick={() => setAddBillingAddress(true)}>Add</button> }
+                                        </td>
                                         <td><button>Add</button></td>
                                     </tr>
                                     <tr>
-                                        <td>You have not set up this type of address yet.</td>
+                                        <td>{!addBillingAddress ? "You have not set up this type of address yet." : null} </td>
                                         <td>You have not set up this type of address yet.</td>
                                     </tr>
-                                </tfoot>
+                                </tbody>
                             </table>
                         </div>
                         <form action="" className={account === 5 ? "account-details" : "d-n"}>
