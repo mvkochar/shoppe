@@ -1,0 +1,99 @@
+.bag {
+    height: 941px;
+    overflow-y: scroll;
+}
+
+.bag-title {
+    font-size: 16px;
+    color: #000;
+}
+
+.bag-subtitle {
+    margin-top: 17px;
+    font-size: 12px;
+    color: #707070;
+}
+
+.bag-box {
+    margin-top: 3px;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.bag-item-info {
+    width: 100px;
+    margin-left: 8px;
+}
+
+.bag-item-title {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #000;
+}
+
+.bag-item-color {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #707070;
+}
+
+.bag-item-price {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #A18A68;
+}
+
+.bag-item-quantity {
+    margin-top: 52px;
+    gap: 8px;
+
+    .quantity-title {
+        font-size: 12px;
+        color: #707070;
+    }
+
+    .quantity-btn {
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        color: #707070;
+    }
+
+    .quantity-count {
+        font-size: 14px;
+        color: #707070;
+    }
+}
+
+.bag-delete-btn {
+    display: block;
+    margin-left: 38px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.bag-subtotal {
+    margin-top: 39px;
+    padding-top: 21px;
+    border-top: 1px solid #000;
+}
+
+.bag-view-cart {
+    display: block;
+    width: 288px;
+    margin-top: 21px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: 1px solid #000;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+}
+
+
+

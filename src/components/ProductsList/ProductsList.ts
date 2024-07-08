@@ -35,7 +35,7 @@ const ProductsList:Product[] = [
     {
         id: 2,
         image: '/images/catalog/3.png',
-        title: 'Kaede Hair Pin Set Of 3',
+        title: 'Kaede Hair',
         price: '30.00',
         isSale: false,
         sale: "0",
@@ -46,7 +46,7 @@ const ProductsList:Product[] = [
     {
         id: 3,
         image: '/images/catalog/4.png',
-        title: 'Hair Pin Set of 3',
+        title: 'Hair Pin',
         price: '30.00',
         isSale: false,
         sale: "0",
@@ -68,7 +68,7 @@ const ProductsList:Product[] = [
     {
         id: 5,
         image: '/images/catalog/6.png',
-        title: 'Yuki Hair Pin Set of 3',
+        title: 'Yuki Hair',
         price: '29.00',
         isSale: false,
         sale: "0",

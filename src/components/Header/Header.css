@@ -32,7 +32,7 @@
     }
 }
 
-.header-search {
+.header-search, .header-cart {
     display: block;
     background-color: transparent;
     border: none;
