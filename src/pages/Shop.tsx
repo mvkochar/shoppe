@@ -24,7 +24,7 @@ const Shop = () => {
                             </div>
                             <div className="select-bl">
                                 <select name="filterSort">
-                                    <option value="0">So by</option>
+                                    <option value="0">Sort by</option>
                                 </select>
                             </div>
                             <div className="price-range">

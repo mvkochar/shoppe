@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import './ShoppingBag.css'
 import ProductsList from '../ProductsList/ProductsList';
+import { Link } from 'react-router-dom';
 
 const style = {
     position: 'absolute' as 'absolute',
@@ -35,8 +36,7 @@ const ShoppingBag = () => {
                 open={open}
                 onClose={handleClose}
                 aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-               
+                aria-describedby="modal-modal-description"  
             >
                 <Box sx={style} className ="bag">
                     <h5 className='bag-title'>Shopping bag</h5>
@@ -122,7 +122,7 @@ const ShoppingBag = () => {
                           <div>Subtotal (5 items)</div>
                           <div>$ 100,00</div>  
                     </div>
-                    <a href="" className="bag-view-cart">View cart</a>
+                    <Link to="/shopping-cart" className="bag-view-cart" onClick={handleClose}>View cart</Link>
                 </Box>
             </Modal>
         </div>

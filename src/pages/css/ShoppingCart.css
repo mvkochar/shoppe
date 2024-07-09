@@ -1,0 +1,235 @@
+.shopping-title {
+    margin-top: 96px;
+    font-weight: 500;
+    font-size: 33px;
+    text-align: center;
+    color: #000;
+}
+
+.shopping-content {
+    margin-top: 64px;
+    margin-bottom: 200px;
+}
+
+.shopping-orders {
+    flex-direction: column;
+    gap: 39px;
+}
+
+.shopping-orders-item {
+    padding-bottom: 39px;
+    border-bottom: 1px solid #D8D8D8;
+
+    .orders-item-info {
+        margin-left: 40px;
+    }
+
+    .orders-item-title {
+        font-size: 20px;
+        color: #000;
+    }
+
+    .orders-item-color {
+        margin-top: 14px;
+        font-size: 16px;
+        color: #707070;
+    }
+
+    .orders-item-price {
+        margin-top: 2px;
+        font-size: 16px;
+        color: #A18A68;
+    }
+
+    .orders-item-quantity {
+        width: fit-content;
+        height: 53px;
+        margin-left: 117px;
+        padding-top: 14px;
+        padding-bottom: 12px;
+        padding-left: 16px;
+        padding-right: 14px;
+        background-color: #EFEFEF;
+        border-radius: 4px;
+        gap: 24px;
+
+        .quantity-btn {
+            display: block;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            color: #707070;
+        }
+
+        .quantity-count {
+            font-size: 16px;
+            color: #707070;
+        }
+    }
+
+    .orders-item-delete {
+        display: block;
+        margin-left: 52px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.shopping-update {
+    display: block;
+    width: 168px;
+    margin-top: 39px;
+    margin-left: 412px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.shopping-coupon-fm {
+    margin-top: 64px;
+
+    input {
+        width: 336px;
+        padding-bottom: 21px;
+        border: none;
+        border-bottom: 1px solid #D8D8D8;
+        outline: none;
+        font-size: 12px;
+        color: #707070;
+    }
+
+    button {
+        width: 168px;
+        margin-left: 76px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        background-color: #000;
+        border: 1px solid #000;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+.shipping-totals {
+    padding-top: 39px;
+}
+
+.shipping-totals-title {
+    font-size: 26px;
+    color: #000;
+}
+
+.shipping-totals-content {
+    width: 462px;
+    margin-top: 44px;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.shipping-totals-item {
+    font-size: 16px;
+
+    .totals-item-title {
+        text-transform: uppercase;
+        color: #000;
+    }
+
+    .totals-item-desc {
+        width: 250px;
+        color: #707070;
+    }
+}
+
+.shipping-calculate {
+    margin-top: 39px;
+}
+
+.shipping-calculate-caption {
+    width: 100%;
+}
+
+.shipping-calculate-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.shipping-calcualte-btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.shipping-calculate-fm {
+    margin-top: 23px;
+    flex-direction: column;
+    gap: 23px;
+
+    select {
+        display: block;
+        width: 250px;
+        padding-bottom: 13px;
+        border: none;
+        border-bottom: 1px solid #D8D8D8;
+        outline: none;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #707070;
+    }
+}
+
+.shopping-totals-update {
+    display: block;
+    width: 250px;
+    margin-top: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.shopping-totals-result {
+    width: 462px;
+    margin-top: 39px;
+    padding-top: 42px;
+    border-top: 1px solid #D8D8D8;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.shopping-totals-proceed {
+    display: block;
+    width: 462px;
+    margin-top: 42px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #000;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
