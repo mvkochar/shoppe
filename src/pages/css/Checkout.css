@@ -1,0 +1,247 @@
+.checkout-title {
+    margin-top: 96px;
+    font-weight: 500;
+    font-size: 33px;
+    text-align: center;
+    color: #000;
+}
+
+.checkout-about {
+    margin-top: 64px;
+    font-size: 16px;
+    line-height: 2;
+    color: #707070;
+}
+
+.checkout-about a,
+.checkout-about label {
+    color: #000;
+}
+
+.checkout-about label {
+    cursor: pointer;
+}
+
+.checkout-coupon {
+    width: 582px;
+    margin-top: 24px;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border: 1px solid #D8D8D8;
+}
+
+.checkout-coupon-note {
+    font-size: 16px;
+    color: #707070;
+}
+
+.checkout-coupon-fm {
+    margin-top: 39px;
+
+    input {
+        width: 336px;
+        padding-bottom: 21px;
+        border: none;
+        border-bottom: 1px solid #D8D8D8;
+        outline: none;
+        font-size: 12px;
+        color: #707070;
+    }
+
+    button {
+        width: 168px;
+        margin-left: 28px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        background-color: #000;
+        border: 1px solid #000;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+.checkount-content {
+    margin-top: 48px;
+    margin-bottom: 253px;
+}
+
+.checkout-bl-title {
+    font-size: 26px;
+    color: #000;
+}
+
+.checkout-details-fm {
+    margin-top: 27px;
+
+    .input-box {
+        flex-direction: column;
+        gap: 37px;
+    }
+
+    input {
+        display: block;
+        width: 580px;
+        padding-bottom: 12px;
+        border: none;
+        border-bottom: 1px solid #D8D8D8;
+        outline: none;
+        font-size: 16px;
+        color: #707070;
+    }
+
+    .input-bl {
+        gap: 40px;
+
+        input {
+            width: 270px;
+        }
+    }
+
+    .check-box {
+        margin-top: 36px;
+        margin-bottom: 37px;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .check-bl {
+        gap: 8px;
+
+        input {
+            width: 16px;
+            height: 15.92px;
+        }
+
+        label {
+            display: block;
+            font-size: 16px;
+            color: #000;
+        }
+    }
+
+}
+
+.checkout-order {
+    width: 580px;
+    height: 846px;
+    margin-top: 39px;
+    padding-top: 39px;
+    padding-left: 59px;
+    padding-right: 59px;
+    background-color: #EFEFEF;
+}
+
+.checkout-order-tb {
+    width: 100%;
+    th,
+    td {
+        font-size: 16px;
+        text-align: left;
+
+        &:first-child {
+            width: 70%;
+        }
+
+        &:last-child {
+            text-align: right;
+        }
+    }
+
+    th,
+    tfoot td {
+        padding-top: 14px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid #D8D8D8;
+    }
+
+    th,
+    tfoot td:first-child {
+        text-transform: uppercase;
+        color: #000;
+    }
+
+    tbody {
+        td {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            color: #707070;
+        }
+    }
+
+    tfoot td {
+        color: #707070;
+    }
+}
+
+.checkout-order-tb tbody tr:last-child td {
+    padding-bottom: 18px;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.checkout-order-tb tfoot tr:last-child td {
+    border-bottom: none;
+    font-weight: 700;
+}
+
+.checkout-order-fm {
+    margin-top: 61px;
+
+    .radio-bl {
+        gap: 8px;
+
+        input {
+            display: block;
+            width: 16px;
+            height: 16px;
+        }
+
+        label {
+            display: block;
+            font-size: 16px;
+            color: #000;
+        }
+
+        &:not(:nth-child(1)) {
+            margin-bottom: 18px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+
+            label {
+                padding-right: 28px;
+                background: url("/public/images/pay-pal.png") no-repeat right;
+            }
+        }
+    }
+}
+
+.checkout-order-note {
+    width: 462px;
+    margin-top: 19px;
+    margin-bottom: 21px;
+    font-size: 12px;
+    color: #707070;
+}
+
+.checkout-order-place {
+    display: block;
+    width: 462px;
+    margin-top: 45px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}

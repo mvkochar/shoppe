@@ -1,6 +1,7 @@
 import React from 'react'
 import './css/ShoppingCart.css'
 import ProductsList from '../components/ProductsList/ProductsList'
+import { Link } from 'react-router-dom'
 
 const ShoppingCart = () => {
   return (
@@ -94,7 +95,7 @@ const ShoppingCart = () => {
             <div>Total</div>
             <div>$87.00</div>
           </div>
-          <a href="" className="shopping-totals-proceed">Proceed to checkout</a>
+          <Link to="/checkout" className="shopping-totals-proceed">Proceed to checkout</Link>
         </div>
       </div>
     </>

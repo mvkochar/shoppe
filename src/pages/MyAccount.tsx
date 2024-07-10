@@ -7,7 +7,7 @@ import OrdersTable from '../components/OrdersTable/OrdersTable'
 
 
 const MyAccount = () => {
-    const [swich, setSwich] = React.useState(3)
+    const [swich, setSwich] = React.useState(1)
     const [account, setAccount] = React.useState(1)
     const [addBillingAddress, setAddBillingAddress] = React.useState(false)
     const [hasOrders, setHasOrders] = React.useState(true)

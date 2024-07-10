@@ -1,0 +1,10 @@
+.order-confirm-info {
+    margin-top: 97px;
+    padding-top: 20px;
+    padding-bottom: 21px;
+    padding-left: 75px;
+    background: #EFEFEF url('/public/images/add.png') no-repeat 39px;
+    border-top: 2px solid #A18A68;
+    font-size: 16px;
+    color: #000;
+}

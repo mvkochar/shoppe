@@ -1,6 +1,9 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { Blog, Contact, Home, MyAccount, OurStory, Privacy, Product, ResetPassword, Shop, ShoppingCart, SingleBlog, ViewOrder } from '../../pages'
+import {
+  Blog, Checkout, Contact, Home, MyAccount, OrderConfirmation, OurStory, Privacy,
+  Product, ResetPassword, Shop, ShoppingCart, SingleBlog, ViewOrder
+} from '../../pages'
 
 const Main = () => {
   return (
@@ -47,11 +50,19 @@ const Main = () => {
       />
       <Route
         path='order'
-        element={<ViewOrder/>}
+        element={<ViewOrder />}
       />
       <Route
         path='shopping-cart'
-        element={<ShoppingCart/>}
+        element={<ShoppingCart />}
+      />
+      <Route
+        path='checkout'
+        element={<Checkout />}
+      />
+      <Route
+        path='order-confirm'
+        element={<OrderConfirmation/>}
       />
     </Routes>
   )
